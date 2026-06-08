@@ -1,0 +1,8 @@
+{
+  "name": "Silabus SD - Gen",
+  "description": "Generator Silabus, RPP, Alur Tujuan Pembelajaran (ATP), Capaian Pembelajaran (CP), Prota, Promes, KKTP, dan Jurnal Mengajar Sekolah Dasar berbasis kurikulum Indonesia dengan integrasi AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #014AAD;
+  --color-secondary: #3B82F6;
+  --color-accent: #FBBF24;
+  --color-darkblue: #00337A;
+}
+
+.sidebar-gradient {
+  background: linear-gradient(180deg, #014AAD 0%, #00337A 100%) !important;
+}
+
+.accent-shadow {
+  box-shadow: 6px 6px 0px 0px #FBBF24 !important;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+}
+
+/* Custom rich text editor formatting styling */
+.rich-text-wrapper [contenteditable] ul,
+.rich-text-wrapper ul {
+  list-style-type: disc !important;
+  padding-left: 1.5rem !important;
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.rich-text-wrapper [contenteditable] ol,
+.rich-text-wrapper ol {
+  list-style-type: decimal !important;
+  padding-left: 1.5rem !important;
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.rich-text-wrapper [contenteditable] li,
+.rich-text-wrapper li {
+  margin-bottom: 0.125rem !important;
+  display: list-item !important;
+}
+
+/* Custom Interactive Scrollbar */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 10px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  transition: background-color 0.2s ease;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: #FBBF24; /* Primary accent yellow */
+  border-radius: 10px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:active {
+  background: #D97706; /* Amber active state */
+}
+
+/* Touch devices scroll support and Firefox compatibility */
+@supports (scrollbar-width: thin) {
+  .scrollbar-custom {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.03);
+  }
+}
+
+
